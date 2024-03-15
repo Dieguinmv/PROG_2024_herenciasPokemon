@@ -9,7 +9,7 @@ public class Squirtle extends Pokemon implements agua{
 	public Squirtle(String nombre,int edad,int grosorCaparazon) {
 		
 		super(nombre,edad);
-		this.grosorCaparazon = grosorCaparazon;
+		setGrosorCaparazon(grosorCaparazon);
 	}
 	
 	public String evolucion() {
@@ -21,7 +21,11 @@ public class Squirtle extends Pokemon implements agua{
 	}
 
 	public void setGrosorCaparazon(int grosorCaparazon) {
-		this.grosorCaparazon = grosorCaparazon;
+		
+		if(grosorCaparazon<25) {
+			this.grosorCaparazon = 25;
+		}
+		else this.grosorCaparazon = grosorCaparazon;
 	}
 
 	@Override
