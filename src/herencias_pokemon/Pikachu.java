@@ -8,7 +8,7 @@ public class Pikachu extends Pokemon implements electrico {
 
 	public Pikachu(String nombre, int edad, int velocidad) {
 		super(nombre, edad);
-		this.velocidad = velocidad;
+		setVelocidad(velocidad);
 	}
 
 	@Override
@@ -21,7 +21,11 @@ public class Pikachu extends Pokemon implements electrico {
 	}
 
 	public void setVelocidad(int velocidad) {
-		this.velocidad = velocidad;
+		if(velocidad<100) {
+			
+			this.velocidad = 100;
+		}
+		else this.velocidad = velocidad;
 	}
 
 	@Override
