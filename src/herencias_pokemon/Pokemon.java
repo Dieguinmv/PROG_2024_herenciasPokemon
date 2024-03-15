@@ -7,10 +7,11 @@ public abstract class  Pokemon {
 	
 	public Pokemon(String nombre,int edad) {
 		
-		setNombre(nombre);
+		this.nombre = nombre;
 		setEdad(edad);
 	}
 	
+	//a implementar en las clases derivadas 
 	public abstract String evolucion();
 
 	public String getNombre() {
@@ -26,7 +27,11 @@ public abstract class  Pokemon {
 	}
 
 	public void setEdad(int edad) {
-		this.edad = edad;
+		if(edad<=0) {
+			this.edad =1;
+		}
+		
+		else this.edad = edad;
 	}
 
 	@Override
