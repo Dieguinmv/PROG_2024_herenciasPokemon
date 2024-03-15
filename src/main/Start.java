@@ -18,10 +18,11 @@ public class Start {
 		pokemons[1] = charmander;
 		pokemons[2] = squirtle;
 		
-		for(int i=0;i<3;i++) {
+		for(int i=0;i<pokemons.length;i++) {
 			
-			System.out.println("Evoluciones Pokemons-->"+pokemons[i].evolucion());
+			
 			System.out.println("Atributos-->"+pokemons[i]);
+			System.out.println("Evoluciones Pokemons-->"+pokemons[i].evolucion());
 			System.out.println(">>>>>>>>>>>>>>>>>>>");
 		}
 		
