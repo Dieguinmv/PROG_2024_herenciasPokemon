@@ -26,6 +26,16 @@ public class Start {
 			System.out.println(">>>>>>>>>>>>>>>>>>>");
 		}
 		
+		System.out.println();
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><");
+		
+		//foreach
+		for (Pokemon pokemon : pokemons) {
+			System.out.println("Atributos-->"+pokemon);
+			System.out.println("Evoluciones Pokemons-->"+pokemon.evolucion());
+			System.out.println(">>>>>>>>>>>>>>>>>>>");
+		}
+		
 		
 	}
 
