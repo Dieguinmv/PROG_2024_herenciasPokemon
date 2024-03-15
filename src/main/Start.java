@@ -30,11 +30,15 @@ public class Start {
 		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><");
 		
 		//foreach
-		for (Pokemon pokemon : pokemons) {
-			System.out.println("Atributos-->"+pokemon);
-			System.out.println("Evoluciones Pokemons-->"+pokemon.evolucion());
+		for (Pokemon p : pokemons) {
+			System.out.println("Atributos-->"+p);
+			System.out.println("Evoluciones Pokemons-->"+p.evolucion());
+			//subida de edad por el doble
+			p.setEdad(p.getEdad()*2);
+			System.out.println("Edad--> "+p.getEdad());
 			System.out.println(">>>>>>>>>>>>>>>>>>>");
 		}
+		
 		
 		
 	}
