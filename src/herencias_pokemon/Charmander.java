@@ -9,7 +9,7 @@ public class Charmander extends Pokemon implements fuego {
 	public Charmander(String nombre,int edad,int alturaLlama) {
 		
 		super(nombre,edad);
-		this.alturaLLama = alturaLlama;	
+		setAlturaLLama(alturaLLama);	
 	}
 	
 	public String evolucion() {
@@ -22,7 +22,11 @@ public class Charmander extends Pokemon implements fuego {
 	}
 
 	public void setAlturaLLama(int alturaLLama) {
-		this.alturaLLama = alturaLLama;
+		
+		if(alturaLLama<10) {
+			this.alturaLLama =10;	
+		}
+		else this.alturaLLama = alturaLLama;
 	}
 
 	@Override
