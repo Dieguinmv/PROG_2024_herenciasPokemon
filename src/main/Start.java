@@ -7,9 +7,11 @@ public class Start {
 	public static void main(String[] args) {
 		
 		Pikachu pika = new Pikachu("Pikachu",2,100);
+		System.out.println(pika.rayo());
 		Charmander charmander = new Charmander("Charmander",4,90);
+		System.out.println(charmander.llamarada());
 		Squirtle squirtle = new Squirtle("Squirtle",3,89);
-		
+		System.out.println(squirtle.potenciaChorro());
 		
 		Pokemon pokemons[];
 		
@@ -36,6 +38,7 @@ public class Start {
 			//subida de edad por el doble
 			p.setEdad(p.getEdad()*2);
 			System.out.println("Edad--> "+p.getEdad());
+			
 			System.out.println(">>>>>>>>>>>>>>>>>>>");
 		}
 		
